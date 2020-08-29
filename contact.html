@@ -5,8 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment</title>
+    <style>
+      .background { border-bottom-style: solid; border-bottom-width:4; border-bottom-color: black;}
+      .float { float: left; margin: 5px; max-width: 300px;}
+      .background1 {background-color:lightblue;}
+      .footer {background-color:grey; width:100%;position:absolute; height:50px; bottom:0;}
+      .padding {padding:1%;}
+      .body {min-height:100vh;}
+  </style>
 </head>
-<body>
+<body class="d-flex flex-column body">
     
     <nav class="navbar navbar-expand-md navbar-dark bg-dark"> 
         <ul class="navbar-nav mr-auto">
@@ -28,38 +36,37 @@
         
         </ul>
    </nav>
-   <div class="container-fluid background1">
-    <div class="container">
-         <header class="row background "> 
-             <article class="col-lg-12 special-text">About Me</article>
- 
-         </header>
+        <main class="container flex-fill background1">
+          <header class="row background "> 
+            <article class="col-lg-12 special-text h1">About Me</article>
+          </header>
          
-                 <div class="row">
-                    <div class="col-lg-8">
-                        <form class="padding">
-                            <div class="form-group">
-                                <label> Name</label>
-                                <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Name">
-                            </div>
-                            <div class="form-group">
-                                <label>Email</label>
-                                <input class="form-control" placeholder="Email">
-                            </div>
+          <div class="row">
+            <div class="col-lg-8">
+              <form class="padding">
+                <div class="form-group">
+                  <label> Name</label>
+                  <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Name">          
+                </div>
 
-                            <div class="form-group">
-                                <label> Message</label>
-                                <textarea placeholder="Message" class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
-                            </div>
+                <div class="form-group">
+                  <label>Email</label>
+                  <input class="form-control" placeholder="Email">
+                </div>
+
+                <div class="form-group">
+                  <label> Message</label>
+                  <textarea placeholder="Message" class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                </div>
                         
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </form>
-                    </div>
-                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
             </div>
-                <div class="row footer">
-   
-                </div>
+          </div>
+          
+        </main> 
+      <footer class="footer navbar-static-bottom">
+      </footer>
                     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -67,14 +74,3 @@
 </body>
 </html>
 
-<style>
-    .background {background-color:pink; border-bottom-style: solid; border-bottom-width:4; border-bottom-color: black;}
-    .special-text {color:blue; font-size: 30px;}
-    .float { float: left; margin: 5px; max-width: 300px;}
-    .background1 {background-color:lightblue;}
-    .footer {background-color:grey; padding:1%;}
-    .padding {padding:1%;}
-
-
-</style>
-    

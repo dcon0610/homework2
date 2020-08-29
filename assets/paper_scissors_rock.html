@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Looping Through Arrays</title>
+  </head>
+  <body>
+
+    <h1>Paper Scissors Rock</h1>
+
+    <script>
+
+var player = prompt("select paper scissors rock")
+//alert(p1)
+var gameArray = ["paper", "scissors","rock"]
+
+var computerSelection = Math.floor((Math.random() * 3) );
+var computerPlayer = gameArray[computerSelection];
+
+if (player===computerPlayer) {
+  console.log(computerPlayer)
+  alert("draw")
+}
+else if (player === gameArray[0] && computerPlayer === gameArray[2]) {
+  alert(computerPlayer)
+  alert("win")
+}
+else if (player === gameArray[0] && computerPlayer === gameArray[1]) {
+  alert(computerPlayer)
+  alert("lost")
+
+}
+
+else if (player === gameArray[1] && computerPlayer === gameArray[2]) {
+  alert(computerPlayer)
+  alert("lost")
+}
+else if (player === gameArray[1] && computerPlayer === gameArray[0]) {
+  alert(computerPlayer)
+  alert("win")
+
+}
+
+else if (player === gameArray[2] && computerPlayer === gameArray[0]) {
+  alert(computerPlayer)
+  alert("win")
+}
+else if (player === gameArray[2] && computerPlayer === gameArray[1]) {
+  alert(computerPlayer)
+  alert("lost")
+
+}
+
+else {
+  alert("error")
+}
+
+</script>
+  </body>
+</html>

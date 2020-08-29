@@ -5,13 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment</title>
+    <style type ="text/css">
+        .background { border-bottom-style: solid; border-bottom-width:4; border-bottom-color: black;}
+        .float { float: left; margin: 5px; max-width: 300px;}
+        .background1 {background-color:lightblue;}
+        .footer {background-color:grey; padding:1%;}
+        .padding {padding-top:2%; padding-bottom: 2%}
+        .height {height:100%;}
+    </style>
 </head>
 <body>
     
     <nav class="navbar navbar-expand-md navbar-dark bg-dark"> 
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <span class="navbar-brand mb-0 h1">David Connell</span>
+                <span class="navbar-brand md-0 h1">David Connell</span>
              </li>
         </ul>
         <ul class="navbar-nav">
@@ -28,60 +36,67 @@
         
         </ul>
    </nav>
-   <div class="container-fluid background1">
-        <div class="container">
+   <div class="container-fluid">
+        <main class="container background1">
             <header class="row background "> 
-                 <article class="col-lg-12 special-text">About Me
+                 <article class="col-lg-12 h1">About Me</article>
             </header>
- 
+            
             <div class="row">
-                <div class="card-group">
-                    <div class="card">
-                      <img src="https://via.placeholder.com/250" class="card-img-top" alt="this image cannot be displayed">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <img src="https://via.placeholder.com/250" class="card-img-top" alt="this image cannot be displayed">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <img src="https://via.placeholder.com/250" class="card-img-top" alt="this image cannot be displayed">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                      </div>
-                    </div>
-                  </div>
-    
                 
-            </div> 
-        </div> 
+                <section class="col-lg-4 padding">
+                    <article class="card height">
+                        <img src="./assets/digital-marketing-meeting.jpg " class="card-img-top" alt="image" width="250" height="250">
+                        <div class="card-body">
+                            <h5 class="card-title">Assignment 1</h5>
+                            <p class="card-text">This first assignment was based on editing the html and css to simplify it and make it easier to read.</p>
+                        </div>
+                    </article>
+                </section>
+
+                <section class="col-lg-4 padding">
+                    <article class="card height">
+                        <img src="./assets/paper_scissors_rock.png" class="card-img-top" alt="image" width="250" height="250">
+                        <div class="card-body">
+                            <h5 class="card-title">Javascript Activity</h5>
+                            <p class="card-text">This was an in class activity to write javascript to play a game of rock paper scissors against the computer. The link is below. </p>
+                            <a href="./assets/paper_scissors_rock.html">Paper Scissors Rock</a>
+                        </div>
+                    </article>
+                </section>
+
+                <section class="col-lg-4 padding">
+                    <article class="card height">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="image">
+                        <div class="card-body">
+                            <h5 class="card-title">Future Project</h5>
+                            <p class="card-text">This is where information about future projects will go.</p>
+                        </div>
+                    </article>
+                </section>
+
+                <section class="col-lg-4 padding">
+                    <article class="card height">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="image">
+                        <div class="card-body">
+                            <h5 class="card-title">Future Project</h5>
+                            <p class="card-text">This where information about future projects will go.</p>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </main> 
     </div>
     
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+
+
 </body>
-</html>
 
-<style>
-    .background {background-color:pink; border-bottom-style: solid; border-bottom-width:4; border-bottom-color: black;}
-    .special-text {color:blue; font-size: 30px;}
-    .float { float: left; margin: 5px; max-width: 300px;}
-    .background1 {background-color:lightblue;}
-    .footer {background-color:grey; padding:1%;}
-    .padding {padding:1%;}
+</html>  
 
-
-</style>
-    

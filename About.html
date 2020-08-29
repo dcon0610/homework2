@@ -5,9 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment</title>
-</head>
-<body>
+    <style>
+    .background { border-bottom-style: solid; border-bottom-width:4; border-bottom-color: black;}
+    .special-text { font-size: 30px;}
+    .float { float: left; margin: 5px; max-width: 300px; padding:0.5%;}
+    .background1 {background-color:lightblue;}
+    .footer {background-color:grey; width:100%;position:absolute; height:50px; bottom:0;}
+    body {min-height:100vh;}
     
+
+
+</style>
+    
+</head>
+<body class="d-flex flex-column body">
+
     <nav class="navbar navbar-expand-md navbar-dark bg-dark"> 
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
@@ -23,13 +35,12 @@
                 <a class="nav-link" href="./Portfolio.html">Portfolio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./About.html">About</a>
+                <a class="nav-link" href="./index.html">About</a>
             </li>
         
         </ul>
-   </nav>
-    <div class="container-fluid background1">
-   <div class="container">
+   </nav> 
+   <main class="container flex-fill background1">
         <header class="row background "> 
             <article class="col-lg-12 special-text">About Me</article>
 
@@ -37,52 +48,34 @@
 
         <div class="row">
             <article class="col-md-8">
-                <section class="card float" style="width: 18rem;">
-                    <img src="https://via.placeholder.com/250" alt="the image cannot be displayed">
+                <section class="card float">
+                    <img src="./assets/david.jpg" alt="the image cannot be displayed" height="250" width="250">
                 </section>
                 <section>
-                    justo, ac venenatis quam. Duis non hendrerit nibh, vitae dapibus mi. Nunc suscipit erat et vehicula semper. Morbi gravida egestas ornare. Curabitur efficitur eget arcu id laoreet. Aliquam erat volutpat. Praesent sed nibh in mi tincidunt bibendum sed sollicitudin erat.
-
-                    Nulla suscipit maximus tellus in accumsan. Maecenas est est, luctus mollis justo gravida, finibus volutpat libero. Aenean eget vehicula libero. Vivamus fringilla ante sed est dictum ullamcorper. Vivamus in convallis dui, nec gravida velit. Praesent in scelerisque sapien. Ut nec arcu scelerisque dui egestas faucibus. Mauris dignissim commodo enim sit amet laoreet. Nullam efficitur sem in erat suscipit vulputate. Curabitur lacinia enim et eros dignissim, id feugiat mi feugiat. Integer in tempus sem. Sed quis ex nibh. Fusce ut turpis nisi. Proin quam dui, auctor eu neque quis, fringilla bibendum eros.
-                    
-                    Curabitur augue justo, feugiat luctus dui vel, varius dignissim metus. Sed sollicitudin justo enim, et aliquet arcu sodales interdum. Etiam laoreet ipsum massa, euismod luctus tortor varius quis. Nunc malesuada nunc eget diam vulputate, sit amet tristique enim fringilla. Vestibulum ut tortor diam. Vivamus suscipit ipsum non convallis fermentum. Nullam vel ipsum quis ex mollis euismod nec et leo. Donec viverra elit tincidunt libero interdum tristique. Nullam v
-                    
+                  <p> I am a student software engineer who is also doing work experience at Lumient, a small software engineering company in Adelaide. I have had exposure to writing javascript using Vue and using python to create the API's on the back end.</p>  
+                  <p>In my study I have had exposure to HTML and CSS, including using packages such as bootstrap. The coursework currently is javascript and I am looking to progress in my ability to understand and write javascript applications.</p>
+                  <p>I will seek to improve my programming skills by writing websites for personal interest, one which will collect large amounts of weather data, and using it to analyse temperature and rainfall trends across australia, and their relationship. This 
+                      information will be displayed in user friendly form. I will also be building a web interface which will display temperature and humidity in my greenhouses as home so I can access them at any place, and I can also control the two by turning on fans and sprinklers remotely through the same website.
+                  </p>
                 </section>
             </article>
         </div>
 
 
 
-    
+</main>
+  
 
-
-
-
-   </div>
-</div>
-
-
-
-
-</div>
-<div class="row footer">
+<footer class="footer navbar-static-bottom">
    
-  </div>
+</footer>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
-<style>
-    .background {background-color:pink; border-bottom-style: solid; border-bottom-width:4; border-bottom-color: black;}
-    .special-text {color:blue; font-size: 30px;}
-    .float { float: left; margin: 5px; max-width: 300px;}
-    .background1 {background-color:lightblue;}
-    .footer {background-color:grey; padding:1%;}
 
-
-</style>
-    
     
 
     
